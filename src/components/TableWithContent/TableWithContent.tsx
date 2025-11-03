@@ -1,4 +1,4 @@
-import { Table } from '@mantine/core';
+import { Box, Table } from '@mantine/core';
 
 import classes from './tableWithContent.module.css';
 
@@ -21,25 +21,28 @@ export const TableWithContent = () => {
 	));
 
 	return (
-		<Table
-			striped
-			withTableBorder
-			withColumnBorders
-			horizontalSpacing="sm"
-			verticalSpacing="xs"
-			fz="sm"
-			layout='fixed'
-			maw={800}
-		>
-			<Table.Thead className={classes.tableHead}>
-				<Table.Tr>
-					<Table.Th w={100}>Element position</Table.Th>
-					<Table.Th w={100}>Element name</Table.Th>
-					<Table.Th w={100}>Symbol</Table.Th>
-					<Table.Th w={100}>Atomic mass</Table.Th>
-				</Table.Tr>
-			</Table.Thead>
-			<Table.Tbody>{rows}</Table.Tbody>
-		</Table>
+		<Box maw={800}>
+			<Table
+				striped
+				withTableBorder
+				withColumnBorders
+				horizontalSpacing="sm"
+				verticalSpacing="xs"
+				fz="sm"
+				layout='fixed'
+				maw={800}
+				w={400}
+			>
+				<Table.Thead className={classes.tableHead}>
+					<Table.Tr>
+						<Table.Th w={200}>Element position</Table.Th>
+						<Table.Th w={200}>Element name</Table.Th>
+						<Table.Th w={200}>Symbol</Table.Th>
+						<Table.Th w={200}>Atomic mass</Table.Th>
+					</Table.Tr>
+				</Table.Thead>
+				<Table.Tbody>{rows}</Table.Tbody>
+			</Table>
+		</Box>
 	);
 }
