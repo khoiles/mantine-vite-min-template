@@ -1,0 +1,43 @@
+{
+	"extensions": {
+		"recommendations": [
+			"dbaeumer.vscode-eslint",
+			"vivaxy.vscode-conventional-commits",
+			"editorconfig.editorconfig",
+			"clinyong.vscode-css-modules",
+			"vunguyentuan.vscode-postcss",
+			"vunguyentuan.vscode-css-variables"
+		]
+	},
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"html.format.enable": true,
+		"eslint.format.enable": true,
+		"editor.formatOnSave": true,
+		"editor.formatOnType": true,
+		"json.format.enable": true,
+		"json.format.keepLines": true,
+		"typescript.format.enable": true,
+		"[javascript]": {
+			"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+		},
+		"[typescript]": {
+			"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+		},
+		"[typescriptreact]": {
+			"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+		},
+		"[json]": {
+			"editor.defaultFormatter": "vscode.json-language-features"
+		},
+		"[jsonc]": {
+			"editor.defaultFormatter": "vscode.json-language-features"
+		},
+		"typescript.preferences.includePackageJsonAutoImports": "on",
+		"eslint.useFlatConfig": true
+	}
+}
