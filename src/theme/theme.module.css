@@ -1,0 +1,9 @@
+.scrollAreaRoot {}
+
+.scrollAreaContent {}
+
+.scrollAreaRoot:where(:not([data-autosize])) .scrollAreaContent {
+	/* Fix missing content on the right side */
+	/* Active or disabled to see the effect */
+	/* display: table; */
+}
