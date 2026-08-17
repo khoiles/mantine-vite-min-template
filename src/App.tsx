@@ -1,14 +1,16 @@
 import "@mantine/core/styles.css";
-import { Box, MantineProvider } from "@mantine/core";
+import '@mantine/notifications/styles.css';
+import { MantineProvider } from "@mantine/core";
+import { Notifications } from '@mantine/notifications';
 import { theme } from "./theme";
-import { HorizontalScrollContainer, TableWithContent } from "./components";
+import { ApplicationShell } from './ApplicationShell';
+
 
 export default function App() {
-  return <MantineProvider theme={theme}>
-    <Box p="xl">
-      <HorizontalScrollContainer>
-        <TableWithContent />
-      </HorizontalScrollContainer>
-    </Box>
-  </MantineProvider>;
+	return (
+		<MantineProvider theme={theme}>
+			<Notifications />
+			<ApplicationShell />
+		</MantineProvider>
+	);
 }
